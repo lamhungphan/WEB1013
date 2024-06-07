@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            color: blueviolet;
+            border: 2px solid;
+            width: 400px;
+            padding: 10px;
+            position: relative;
+            top: 80px;
+        }
+
+        .form-control {
+            width: 98%;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <div>Họ và tên:</div>
+            <input type="text" class="form-control" id="username" maxlength="50">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="gender">Giới tính</label><br>
+            <fieldset>
+                <input type="radio" name="gender" id="Nam">
+                <label for="Nam">Nam</label> <!--for = id để bấm label cũng nhận-->
+                <input type="radio" name="gender" id="Nu">
+                <label for="Nu">Nữ</label>
+            </fieldset>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Ngày sinh</label><br>
+            <input type="date" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Điểm</label><br>
+            <input type="number" step="0.25" min="0" max="10" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Nghề nghiệp</label><br>
+            <input type="list" id="drop-down" list="dropdown-option" class="form-control">
+            <datalist id="dropdown-option">
+                <option value="1">Giáo viên</option>
+                <option>Kiến trúc sư</option>
+                <option>Công nhân</option>
+            </datalist>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="habbit">Sở thích</label><br>
+            <fieldset>
+                <input type="checkbox" name="habbit">
+                <label>Thể thao</label>
+                <input type="checkbox">
+                <label>Du lịch</label>
+                <input type="checkbox">
+                <label>Âm nhạc</label>
+                <input type="checkbox">
+                <label>Ẩm thực</label>
+            </fieldset>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Ghi chú:</label><br>
+            <textarea name="" id="" class="form-control"></textarea>
+        </div>
+        <hr>
+        <div class="form-group">
+            <button class="form-button">Đăng ký</button>
+            <button class="form-button">Đăng nhập</button>
+        </div>
+    </form>
+</body>
+
+</html>

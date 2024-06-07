@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            color: blueviolet;
+            border: 2px solid;
+            width: 300px;
+            padding: 10px;
+            position: relative; /*chỉnh vị trí dựa trên vị trí ban đầu*/
+            top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <div>Họ và tên:</div>
+            <input type="text" name="username" class="form-control"><br>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Quốc tịch:</label><br>
+            <input type="password" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Ghi chú:</label class="form-control"><br>
+        </div>
+        <hr>
+        <div class="form-group">
+            <button class="form-button">Thêm</button>
+            <button class="form-button">Sửa</button>
+            <button class="form-button">Xoá</button>
+        </div>
+    </form>
+</body>
+
+</html>

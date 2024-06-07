@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Đảm bảo chiều cao 100% */
+}
+
+header {
+    background-image: url('img/fpoly2.jpg');
+    background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ header */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    display: block;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    font-size: 4em;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    line-height: 200px; /* Căn chỉnh văn bản theo chiều dọc */
+    padding: 100px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 3px;
+    background-color: orangered;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+/* #sub-nav - bug */
+.menu ul ul {
+    position: absolute;
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: grey;
+    box-shadow: -0 -0 10px black;
+}
+
+/* .menu ul - no bug*/
+#sub-nav a {
+    display: block;
+    line-height: 30px;
+    color: orangered;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: large;
+    padding: 0 10px;
+}
+
+#sub-nav a:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.menu>ul>li:hover>ul {
+    display: block;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 2em;
+    font-variant: small-caps;
+    color: white;
+    padding: 10px;
+    line-height: 40px;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+article {
+    width: 75%;
+}
+
+aside {
+    width: 25%;
+    float: right;
+}
+
+aside li {
+    list-style: none;
+    border: 1px solid orange;
+    padding: 5px;
+}
+aside li:hover {
+   background-color: orange;
+}
+
+aside a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: orangered;
+    font-variant: small-caps;
+}
+
+footer {
+    border-top: 5px double orangered;
+    line-height: 50px;
+    background-color: lightcyan;
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+}

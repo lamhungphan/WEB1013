@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab9.1.css">
+    <style>
+        .form-group {
+            border: 1px solid;
+            width: 400px;
+            padding: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <div>
+                <div>Họ và tên:</div>
+                <input type="text" name="username" class="form-control">
+            </div>
+            <br>
+            <div>
+                <label for="gender">Giới tính: </label>
+                <input type="radio" id="male" name="gender" checked>
+                <label for="male">Nam</label>
+                <input type="radio" id="female" name="gender">
+                <label for="gender">Nữ</label>
+            </div>
+            <br>
+            <div>
+                <label>Hình ảnh: </label>
+                <input type="file">
+            </div>
+            <br>
+            <div>
+                <label>Quốc tịch: </label><br>
+                <select id="nationality">
+                    <option value="vietnam">Viet Nam</option>
+                    <option value="usa">United States</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Sở thích: </label><br>
+                <input type="radio">Thể thao
+                <input type="radio">Du lịch
+                <input type="radio">Âm nhạc
+                <input type="radio">Ẩm thực
+            </div>
+            <br>
+            <div>
+                <label>Ghi chú: </label><br>
+                <textarea rows="10px" cols="50px"></textarea>
+            </div>
+            <hr>
+            <input type="submit" value="Đăng ký">
+            <input type="reset" value="Nhập lại">
+        </div>
+    </form>
+</body>
+
+</html>

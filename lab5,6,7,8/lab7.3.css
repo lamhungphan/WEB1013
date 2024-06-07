@@ -1,0 +1,80 @@
+header {
+    background-image: url('img/fpoly2.jpg');
+    background-size: 100% 100%;
+    height: 0px;
+    padding-bottom: 45%;
+}
+
+#slogan {
+    color: white;
+    display: block;
+    position: relative;
+    top: 250px;
+    left: 30px;
+    font-size: larger;
+    font-style: oblique;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    /* align-items: end; */
+}
+
+#top-right-nav {
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-bottom-left-radius: 2em;
+    position: relative;
+    height: 60px;
+    padding-right: 20px;
+}
+
+#top-right-nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+#top-right-nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav {
+    line-height: 30px;
+    background-color: orangered;
+    text-align: left;
+    color: white;
+    height: 30px;
+}
+
+nav>.left-nav {
+    font-variant: inherit;
+    color: white;
+    float: left;
+    max-width: 70%;
+}
+
+nav>.right-nav {
+    font-variant: inherit;
+    color: white;
+    float: right;
+    max-width: 30%;
+    padding: 0 5px 0 0;
+}
+
+.right-nav>p {
+    margin: 0 2px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
