@@ -97,7 +97,7 @@ a:hover {
 /* contents */
 section {
    overflow: hidden;
-   background-color: azure;
+   background-color: rgb(92, 172, 148);
 }
 
 article {
